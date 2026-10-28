@@ -1,4 +1,4 @@
-# Размещение «Собрано» на Netlify
+# Размещение «family_menu» на Netlify
 
 В репозитории теперь два режима сборки. `npm run build` собирает Vinext/Cloudflare для Sites. `npm run build:netlify` собирает настоящий Next.js в `.next`; штатный адаптер Netlify упаковывает страницы и API в Functions. Настройки находятся в `netlify.toml` и имеют приоритет над автоматически предложенной сборкой.
 
@@ -10,7 +10,7 @@
 
 Наличие переменной означает, что подключение настроено, и не подтверждает действительность ключа: отказ DeepSeek при запросе показывается с HTTP-кодом. Серверный ключ заменяется в Netlify с последующим деплоем. Удалить его через интерфейс приложения нельзя.
 
-1. Подключите `trollpom/family-pokupki`, ветку `main`. Base directory оставьте пустой, build command — `npm run build:netlify`, publish directory — `.next`. Node.js — 22.
+1. Подключите `trollpom/family_menu`, ветку `main`. Base directory оставьте пустой, build command — `npm run build:netlify`, publish directory — `.next`. Node.js — 22.
 2. В **Project configuration → Environment variables** добавьте секреты с областью **Functions** (или All scopes), доступные в Production. Не сохраняйте их в коде:
 
 | Переменная | Значение |
@@ -49,3 +49,5 @@
 Документация: [Next.js на Netlify](https://docs.netlify.com/build/frameworks/framework-setup-guides/nextjs/overview/), [Netlify Blobs](https://docs.netlify.com/build/data-and-storage/netlify-blobs/).
 
 Фоновые функции: [Background Functions](https://docs.netlify.com/build/functions/background-functions/), [Scheduled Functions](https://docs.netlify.com/build/functions/scheduled-functions/).
+
+Имена хранилища `sobrano-database`, таблицы `_sobrano_migrations`, cookie и подписей фоновых запросов сохранены для совместимости после переименования в `family_menu`. Это служебные идентификаторы, а не название интерфейса; переименование не создаёт новую базу и не меняет ключ шифрования.
