@@ -4,10 +4,10 @@ import "./globals.css";
 export const viewport: Viewport = {width: "device-width", initialScale: 1, themeColor: "#315d45"};
 
 export const metadata: Metadata = {
-  title: "family_menu — покупки с хорошим планом",
+  title: "Семейное меню — покупки с хорошим планом",
   description: "Недельное меню для семьи, рецепты DeepSeek, список покупок и расчёт бюджета.",
   manifest: "/manifest.webmanifest",
-  appleWebApp: { capable: true, statusBarStyle: "default", title: "family_menu" },
+  appleWebApp: { capable: true, statusBarStyle: "default", title: "Семейное меню" },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

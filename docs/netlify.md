@@ -1,4 +1,4 @@
-# Размещение «family_menu» на Netlify
+# Размещение «Семейное меню» на Netlify
 
 В репозитории теперь два режима сборки. `npm run build` собирает Vinext/Cloudflare для Sites. `npm run build:netlify` собирает настоящий Next.js в `.next`; штатный адаптер Netlify упаковывает страницы и API в Functions. Настройки находятся в `netlify.toml` и имеют приоритет над автоматически предложенной сборкой.
 
